@@ -75,126 +75,42 @@
     <div id="container">
       <div id="main">
 
-   
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2016/04/22/python/" title="python" itemprop="url">
+  
+    <h1 itemprop="name">python</h1>
     
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
+     
+           <p itemprop="description" >系统：Windows 7版本：Python 2.7
+
+Python是一门简洁、优雅的语言，丰富的第三方库能让我们很多的编程任务变得更加简单。对于想要用Python进行数据分析，就需要强大的Python第三库如numpy、pandas、matplotlib、scipy必不可少，而P</p>
+        
     
-      <a href="/2016/04/22/python/" title="python" itemprop="url">python</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Jan Yang" target="_blank" itemprop="author">Jan Yang</a>
-		
-  <p class="article-time">
-    <time datetime="2016-04-22T09:06:18.000Z" itemprop="datePublished"> Published 2016-04-22</time>
+    <time datetime="2016-04-22T09:06:18.000Z" itemprop="datePublished">2016-04-22</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2016/04/22/hello-world/" title="Hello World" itemprop="url">
+  
+    <h1 itemprop="name">Hello World</h1>
     
-  </p>
-</header>
-    <div class="article-content">
+     
+           <p itemprop="description" >Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the </p>
         
-        <blockquote>
-<p>系统：Windows 7<br>版本：Python 2.7</p>
-</blockquote>
-<p>Python是一门简洁、优雅的语言，丰富的第三方库能让我们很多的编程任务变得更加简单。对于想要用Python进行数据分析，就需要强大的Python第三库如numpy、pandas、matplotlib、scipy必不可少，而Python本身除标准库外都需要另行安装，安装这些第三方库（包）成为许多人的问题，下面我们以安装requests包为实例来看如何安装这些包，如果需要安装其他包，请把requests替换为想要安装的包名即可。</p>
-<h3 id="安装第三方库"><a href="#安装第三方库" class="headerlink" title="安装第三方库"></a>安装第三方库</h3><p>虽然Python安装库的方式非常简单，但是由于不同环境经常会出现错误，所以这里尽可能提供多种安装方式避免无法安装的情况。<strong>注意：以下所有命令都是在Dos下进行，不是在编辑器环境下，如果提示</strong><code>‘pip’不是内部或外部命令，也不是可运行的程序</code><strong>请检查Python是否设置好环境变量。</strong>可参考<a href="">xxx</a><br><img src="http://upload-images.jianshu.io/upload_images/1428402-82a6f5ce322279bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="需要配置好环境变量"></p>
-<h5 id="方法一：包管理器（推荐）"><a href="#方法一：包管理器（推荐）" class="headerlink" title="方法一：包管理器（推荐）"></a>方法一：包管理器（推荐）</h5><p>Python有个专门管理第三方库的网站<a href="https://pypi.python.org/pypi" target="_blank" rel="external">PyPI</a>。跟很多的编程语言一样，Python也有包管理器，通过包管理器我们能很方便安装或者卸载第三方库。使用pip或easy_install安装包会自动搜索pypi上最新的包，自动下载安装。如果安装其他的库，只需要将requests换成其他名字即可<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install requests</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">easy_install requests</span><br></pre></td></tr></table></figure>
-<p><img src="http://upload-images.jianshu.io/upload_images/1428402-7a1f8e4d4befa944.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安装成功"></p>
-<h5 id="方法二：源码安装"><a href="#方法二：源码安装" class="headerlink" title="方法二：源码安装"></a>方法二：源码安装</h5><p>Python的很多第三方库都是开源的，我们能从<a href="https://github.com/" target="_blank" rel="external">GitHub</a>或者PyPi下载到源码，大多数情况得到的源码都是<code>.zip  tar.gz  tar.zip  tar.bz2</code>格式的压缩包。解压这些包，进入文件夹可以看到<code>setup.py</code>的文件，Windows下用CMD进行安装<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python setup.py install</span><br></pre></td></tr></table></figure></p>
-<h5 id="方法三：Anaconda安装"><a href="#方法三：Anaconda安装" class="headerlink" title="方法三：Anaconda安装"></a>方法三：Anaconda安装</h5><p>前面讲过Anaconda集成很多科学计算包，对于利用Python来说数据分析十分方便，可以省去很多安装时间，当然Anaconda也提供了类似pip的安装方式，区别的是Anaconda是在自己的网站所有相关的库，经常会有一些找不到包而安装失败的情况。安装方法跟pip一样都是在Dos命令下进行，这里就不再进行重复。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install requests</span><br></pre></td></tr></table></figure></p>
-<h5 id="方法四：Pycharm安装"><a href="#方法四：Pycharm安装" class="headerlink" title="方法四：Pycharm安装"></a>方法四：Pycharm安装</h5><p>如果你已经安装好Pycharm，那么可以利用<strong>Available Packages</strong>的安装包，这种方式有时候会因为网络问题而安装失败，只需要换个网络环境多安装几次即可。</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1428402-1d1333bdb3c57326.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="第一步"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1428402-2afc3c96c2535460.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="第二步"></p>
-<h5 id="方法五：whl文件安装"><a href="#方法五：whl文件安装" class="headerlink" title="方法五：whl文件安装"></a>方法五：whl文件安装</h5><p>除了下载源码安装外，我们还能利用whl文件进行库的安装，进入<a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/" target="_blank" rel="external">http://www.lfd.uci.edu/~gohlke/pythonlibs/</a>后找到对应的Python版本和系统版本的whl文件下载到本地，这里我们存到D盘的根目录。一般py2.py3代表Python 2和3均可安装，而cp35则代表只能适用于Python 3.5，另外win32和amd64代表32位和64位系统的版本。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install D:/requests-2.9.1-py2.py3-none-any.whl</span><br></pre></td></tr></table></figure></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1428402-1b404941ecb650cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="第一步"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1428402-39cdf2bea1ec8b45.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="第二步"></p>
-<h3 id="卸载第三方库"><a href="#卸载第三方库" class="headerlink" title="卸载第三方库"></a>卸载第三方库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip uninstall requests</span><br></pre></td></tr></table></figure>
-<h3 id="查看装好的库"><a href="#查看装好的库" class="headerlink" title="查看装好的库"></a>查看装好的库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip list</span><br></pre></td></tr></table></figure>
-<p><img src="http://upload-images.jianshu.io/upload_images/1428402-f920cfd56c92500d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="查看已安装的库"></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
     
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2016/04/22/hello-world/" title="Hello World" itemprop="url">Hello World</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Jan Yang" target="_blank" itemprop="author">Jan Yang</a>
-		
-  <p class="article-time">
-    <time datetime="2016-04-22T07:02:00.538Z" itemprop="datePublished"> Published 2016-04-22</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
+    <time datetime="2016-04-22T07:02:00.538Z" itemprop="datePublished">2016-04-22</time>
+  </a>
+</section>
 
 
 
